@@ -64,3 +64,6 @@ def detail (request):
         data=[area,irri]
         #return render_to_response('agri/form.html', {'area': area},{'irri':irri})
         return render_to_response('agri/form.html', {'data': data})
+
+def second (request):
+            return HttpResponse("Milan tori mula")
