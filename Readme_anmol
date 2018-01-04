@@ -1,0 +1,8 @@
+setting.py and main urls.py in ./hackathon
+agri app's urls.py,model.py,views.py,admin.py in ./agri
+images in ./agri/static/images
+html files in ./agri/templates/agri/
+in order to use any host in settings.py LOCAL_HOST=["ip_address "] 
+		eg LOCAL_HOST=["192.168.9.30"]
+unlock port 8000 by searching in google if needed to be used in mobile
+in order to runserver python manage.py 192.168.9.30:8000 (example)
