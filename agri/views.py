@@ -88,7 +88,12 @@ def submit (request):
             area = 31.79*area
         elif area=="bigah":
             area = 6772.4*area
-        st=list(recommend(1711, 16.7, irri, 1553, month, timespan, area))
+        try:
+            st=list(recommend(1711, 16.7, irri, 1553, month, timespan, area))
+
+        except ValueError:
+            a="a"
+            return render_to_response('agri/exception.html', {'a': a})
 
         for i in st:
             if i[0]=="Pea":
@@ -103,6 +108,8 @@ def submit (request):
                 i.append("अम्बा")
             elif i[0]=="Gourd":
                 i.append("लौका")
+            else:
+                i.append(i[0])
     return render_to_response('agri/third.html', {'st': st})
 
 def second (request):
