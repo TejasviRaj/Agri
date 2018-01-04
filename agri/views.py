@@ -91,10 +91,26 @@ def submit (request):
         elif area=="bigah":
             area = 6772.4*area
         st=list(recommend(1711, 16.7, irri, 1553, month, timespan, area))
+
+        for i in st:
+            if i[0]=="Pea":
+                i.append("﻿केराऊ")
+            elif i[0]=="Sugarcane":
+                i.append("उखु")
+            elif i[0]=="Pineapple":
+                i.append("भुइँकटहर")
+            elif i[0]=="Broccoli":
+                i.append("ब्रोकोली")
+            elif i[0]=="Amba":
+                i.append("अम्बा")
+            elif i[0]=="Gourd":
+                i.append("लौका")
+
+
         data=[area,dropdown,month,investment_min,investment_max,irri,timespan]
 
 
-    return render_to_response('agri/harka.html', {'st': st})
+    return render_to_response('agri/third.html', {'st': st})
 
 def second (request):
             #return HttpResponse("Milan tori mula")

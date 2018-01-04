@@ -125,24 +125,21 @@
 
 <!--- dhan --->
 {% for i in st %}
-        {% if i == "Pineapple" %}
 		<div class ="row" >
 				<div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-1">
-          <img src ="{{ MEDIA_URL }}  /static/agri/images/paddy.jpg  " class="img-responsive" />
+          <img src ="{{ MEDIA_URL }}  /static/agri/images/{{i.0}}.jpg  " class="img-responsive" />
 				</div>
 				<div class="col-xs-11 col-xs-offset-1 col-md-6 col-md-offset-0">
 					<div class = "row">
 						<div class="col-xs-12">
-							<h3>धान </h3>
+							<h3>{{i.3}} </h3>
 						</div>
 					</div>
 					<div class = "row">
 						<div class="col-xs-12">
 							<ul type="bullet">
-								<li>बजार भाउ : २०००</li>
-								<li>लगानी: १५००० </li>
-								<li>नाफा : ५००००</li>
-								<li>बजार : काठमाडौँ</li>
+								<li>लगानी: {{i.1}} </li>
+								<li>आम्दानी : {{i.2}}</li>
 								<li><a href="https:\\google.com.np">बिस्तृत  जानकारीको लागि</a> </li>
 							</ul>
 						</div>
@@ -154,65 +151,6 @@
 
 
 		<br /><br /><br />
-		{% endif %}
-
-		{% if i == "Marich" %}
-
-
-
-		<div class ="row" >
-
-				<div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-1">
-<img src ="{{ MEDIA_URL }}  /static/agri/images/maize.jpg  " class="img-responsive" />				</div>
-				<div class="col-xs-11 col-xs-offset-1 col-md-6 col-md-offset-0">
-					<div class = "row">
-						<div class="col-xs-12">
-							<h3>मकै </h3>
-						</div>
-					</div>
-					<div class = "row">
-						<div class="col-xs-12">
-							<ul type="bullet">
-								<li>बजार भाउ : ३०००</li>
-								<li>लगानी: २५००० </li>
-								<li>नाफा : ४००००</li>
-								<li>बजार : पोखरा</li>
-								<li><a href="https:\\google.com.np">बिस्तृत  जानकारीको लागि</a> </li>
-							</ul>
-						</div>
-					</div>
-				</div>
-		</div>
-		<br /><br /><br />
-
-		{% endif %}
-
-		{% if i == "Alaichi" %}
-
-		<div class ="row" >
-				<div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-1">
-<img src ="{{ MEDIA_URL }}  /static/agri/images/millet.jpeg  " class="img-responsive" />				</div>
-				<div class="col-xs-11 col-xs-offset-1 col-md-6 col-md-offset-0">
-					<div class = "row">
-						<div class="col-xs-12">
-							<h3>कोदो </h3>
-						</div>
-					</div>
-					<div class = "row">
-						<div class="col-xs-12">
-							<ul type="bullet">
-								<li>बजार भाउ : २०००</li>
-								<li>लगानी: १००० </li>
-								<li>नाफा : ५००</li>
-								<li>बजार : चितवन </li>
-								<li><a href="https:\\google.com.np">बिस्तृत  जानकारीको लागि</a> </li>
-							</ul>
-						</div>
-					</div>
-				</div>
-		</div>
-    {% endif %}
-
 {% endfor %}
 
 
