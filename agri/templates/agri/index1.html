@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'agri/check/style2.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'agri/check/milan1.css' %}" />
+
+</head>
+
+<body class>
+<form action="submit" method="POST">
+  {% csrf_token %}
+  <fieldset>
+    <legend>Field Information:</legend>
+    Area:<br>
+    <input type="text" name="Area" value="Area"><br>
+    Type:<br>
+    <input type="text" name="Type" value="type"><br><br>
+    Irrigation<br>
+    <input type="radio" name="irrigation" value="Yes"> Yes<br>
+    <input type="radio" name="irrigation" value="No"> No<br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<ul>
+<li> <a href="milan.html"> lol </a>
+</ul>
+</body>
