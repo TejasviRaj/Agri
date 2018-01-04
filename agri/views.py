@@ -81,8 +81,6 @@ def submit (request):
         area=request.POST.get("Area", "")
         dropdown=request.POST.get("dropdown", "")
         month=request.POST.get("month", "")
-        investment_min=request.POST.get("investment_min", "")
-        investment_max=request.POST.get("investment_max", "")
         irri=request.POST.get("irrigation", "")
         timespan=request.POST.get("timespan", "")
 
@@ -105,11 +103,6 @@ def submit (request):
                 i.append("अम्बा")
             elif i[0]=="Gourd":
                 i.append("लौका")
-
-
-        data=[area,dropdown,month,investment_min,investment_max,irri,timespan]
-
-
     return render_to_response('agri/third.html', {'st': st})
 
 def second (request):
