@@ -61,7 +61,8 @@ def detail (request):
         """
         area=request.POST.get("Area", "")
         irri=request.POST.get("irrigation", "")
-        data=[area,irri]
+        crop=request.POST.get("crop", "")
+        data=[area,irri,crop]
         #return render_to_response('agri/form.html', {'area': area},{'irri':irri})
         return render_to_response('agri/form.html', {'data': data})
 
