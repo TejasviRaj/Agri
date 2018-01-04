@@ -83,7 +83,7 @@ def submit (request):
         data=[area,dropdown,month,investment_min,investment_max,irri,timespan]
 
 
-        return render_to_response('agri/third.html', {'st': st})
+    return render_to_response('agri/third.html', {'st': st})
 
 def second (request):
             #return HttpResponse("Milan tori mula")

@@ -1,4 +1,4 @@
-<!--- {% for x in st %}
+<!---{% for x in st %}
     {{x}} <br>
 {% endfor %} --->
 
@@ -121,7 +121,11 @@
 						<br /><br /><h2>हामी तपाईलाई निम्नानुसारको बाली लगाउन सिफारिस गर्दछौँ :<br /></h2>
 				</div>
 
-		</div>
+				<a id="that" />
+
+<!--- dhan --->
+{% for i in st %}
+        {% if i == "Pineapple" %}
 		<div class ="row" >
 				<div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-1">
           <img src ="{{ MEDIA_URL }}  /static/agri/images/paddy.jpg  " class="img-responsive" />
@@ -145,7 +149,17 @@
 					</div>
 				</div>
 		</div>
+
+  <!--- dhan --->
+
+
 		<br /><br /><br />
+		{% endif %}
+
+		{% if i == "Marich" %}
+
+
+
 		<div class ="row" >
 
 				<div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-1">
@@ -170,6 +184,11 @@
 				</div>
 		</div>
 		<br /><br /><br />
+
+		{% endif %}
+
+		{% if i == "Alaichi" %}
+
 		<div class ="row" >
 				<div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-1">
 <img src ="{{ MEDIA_URL }}  /static/agri/images/millet.jpeg  " class="img-responsive" />				</div>
@@ -192,6 +211,9 @@
 					</div>
 				</div>
 		</div>
+    {% endif %}
+
+{% endfor %}
 
 
 	<footer id="gtco-footer" role="contentinfo">
