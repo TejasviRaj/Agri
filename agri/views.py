@@ -36,34 +36,19 @@ def index (request):
     }
     return HttpResponse(template.render(context, request))
 
-def detail (request):
+def submit (request):
 
-#    for key, value in request.POST.items():
-#        print(key, value)
-#    if (request.POST):
-#        return render_to_response('agri/form.html')
     if request.method == 'POST':
-
-        """
-        form = CommentForm(request.POST)
-        if form.is_valid():
-            comment = form.save(commit=False)
-            comment.user = request.user
-            comment.save()
-            # render?
-            return HttpResponseRedirect('/results/', {
-                'restaurant': get_object_or_404(
-                                                Restaurant,
-                                                Area=request.POST['Area'],
-                                                irrigation=request.POST['irrigation']
-                                                )
-                })
-        """
         area=request.POST.get("Area", "")
+        dropdown=request.POST.get("dropdown", "")
+        month=request.POST.get("month", "")
+        investment_min=request.POST.get("investment_min", "")
+        investment_max=request.POST.get("investment_max", "")
         irri=request.POST.get("irrigation", "")
-        crop=request.POST.get("crop", "")
-        data=[area,irri,crop]
-        #return render_to_response('agri/form.html', {'area': area},{'irri':irri})
+        timespan=request.POST.get("timespan", "")
+
+        data=[area,dropdown,month,investment_min,investment_max,irri,timespan]
+
         return render_to_response('agri/form.html', {'data': data})
 
 def second (request):
