@@ -92,3 +92,11 @@ def second (request):
                 'a': "area",
             }
             return HttpResponse(template.render(context, request))
+
+def map (request):
+            #return HttpResponse("Milan tori mula")
+            template = loader.get_template('agri/map.html')
+            context = {
+                'a': "area",
+            }
+            return HttpResponse(template.render(context, request))
