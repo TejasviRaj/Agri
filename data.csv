@@ -1,8 +1,28 @@
-Nepali Name,Scientific Name,Min. Elevation,Max. Elevation,Total Rainfall,Temperature,Need Irrigation
-Marich,Piper nigrum,1500,4500,2500,24,0
-Aduwa,Zingiber officinale,1500,4500,550,27,0
-Alaichi,Elettaria cardamomum,800,2100,1800,18,1
-Amba,Psidium guajava,1500,2800,1600,23,1
-Anar,Punica granatum,100,700,300,10,1
-Kiwi,Actinidea chinensis,800,1500,1500,32,1
-Pineapple,Ananas comosus,0,1000,1200,23,0
+Nepali Name,Scientific Name,Min. Elevation (m),Max. Elevation (m),Total Rainfall (mm),Temperature,Need Irrigation,Investment per meter square,Market Price and returns per square meter,Best month to harvest,Harvesting months
+Marich,Piper nigrum,1500,4500,2500,24,0,200,600,2,3
+Aduwa,Zingiber officinale,1500,4500,550,27,0,150,450,6,6
+Alaichi,Elettaria cardamomum,800,2100,1800,18,1,80,240,3,12
+Amba,Psidium guajava,1500,2800,1600,23,1,70,210,7,6
+Anar,Punica granatum,100,700,300,10,1,90,270,3,6
+Kiwi,Actinidea chinensis,800,1500,1500,32,0,75,225,1,3
+Pineapple,Ananas comosus,0,1600,1200,23,0,110,330,6,12
+Maize,Zea mays,0,2500,500,15,1,300,900,3,3
+Coffee,,1000,4000,800,38,1,200,600,4,6
+Green Tea,,1500,2300,950,24,1,150,450,3,12
+Mushroom,,500,3000,750,15,1,80,240,9,6
+Millet ,,700,1700,1150,18,0,70,210,12,6
+Barley,,900,4000,1350,29,0,90,270,2,3
+Pea,,1400,2000,1650,20,1,75,225,5,12
+Potato,,790,1400,1240,16,1,110,330,7,3
+Ladies Finger,,500,1100,1850,40,1,300,900,4,6
+Cauliflower,,260,800,1780,17,1,200,600,8,12
+Broccoli,,780,2500,1460,23,0,150,450,7,6
+Gourd,,960,2500,700,24,0,80,240,4,6
+Onion,,230,700,300,27,1,70,210,9,3
+Garlic,,240,960,700,19,1,90,270,10,12
+Green Pepper,,670,740,1400,13,0,75,225,2,3
+Tomato,,780,1980,1700,6,0,200,600,1,6
+Sugarcane,,970,1600,250,21,1,150,450,7,12
+Vicks,,470,1700,1800,9,1,80,240,8,6
+Paulownia,,790,1900,1000,11,1,70,210,9,6
+Mango,,200,800,900,15,1,90,270,7,12
