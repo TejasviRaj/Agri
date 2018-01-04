@@ -66,4 +66,9 @@ def detail (request):
         return render_to_response('agri/form.html', {'data': data})
 
 def second (request):
-            return HttpResponse("Milan tori mula")
+            #return HttpResponse("Milan tori mula")
+            template = loader.get_template('agri/second.html')
+            context = {
+                'a': "area",
+            }
+            return HttpResponse(template.render(context, request))
