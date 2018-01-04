@@ -38,7 +38,7 @@ def recommend(rain, temp, irri):
     neigh.fit(k_df)
 
     pred = neigh.kneighbors(new_mat, return_distance=False)
-    return df.loc[pred[0]]
+    return list(df.loc[pred[0]].loc[:,"Nepali Name"].values)
 
 def index (request):
 
@@ -77,7 +77,7 @@ def submit (request):
         irri=request.POST.get("irrigation", "")
         timespan=request.POST.get("timespan", "")
 
-        st=list(recommend(2000, 13, 1))
+        st=recommend(2000, 13, 1)
 
 
         data=[area,dropdown,month,investment_min,investment_max,irri,timespan]
